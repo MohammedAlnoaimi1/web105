@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+      <link rel="stylesheet" href="../css/styles.css">
+      <link rel="stylesheet" href="../css/slideshow.css">
+      <link rel="stylesheet" href="../css/contact.css">
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta name="viewport" content="with=device-width, intial-scale=1">    
+      <title>My First website </title>  
+        <title>My First website </title>  
+        
+          
+    </head>
+
+    <body class="b1">
+        <div class="navbar-container"></div>
+        <ul class="ui1">
+            <li class="li1"><a href="index.html">Home</a></li>
+            <li class="li1"><a href="news.html">News</a></li>
+            <li class="li1"><a href="contact.html">Contact</a></li>
+            <li style="float:right"><a class="active1" href="#bottom">About</a></li>
+          </ul>
+
+        </div>
+       
+            
+<div class="adjustcont">
+<div class="slideshow-container">
+
+  <div class="mySlides fade">
+    <div class="numbertext">1 / 3</div>
+    <img class="slideimg" src="../image/img1.jpg" style="width:100%">
+    <div class="text">HTML5</div>
+  </div>
+  
+  <div class="mySlides fade">
+    <div class="numbertext">2 / 3</div>
+    <img class="slideimg" src="../image/img2.jpg" style="width:100%">
+    <div class="text">JAVA</div>
+  </div>
+  
+  <div class="mySlides fade">
+    <div class="numbertext">3 / 3</div>
+    <img class="slideimg" src="../image/img3.jpg" style="width:100%">
+    <div class="text">PYTHON</div>
+  </div>
+  
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+  
+  </div>
+  <br>
+  
+  <div style="text-align:center">
+    <span class="dot" onclick="currentSlide(1)"></span> 
+    <span class="dot" onclick="currentSlide(2)"></span> 
+    <span class="dot" onclick="currentSlide(3)"></span> 
+  </div>
+  </div>
+
+
+
+  
+  <script>
+  var slideIndex = 1;
+  showSlides(slideIndex);
+  
+  function plusSlides(n) {
+    showSlides(slideIndex += n);
+  }
+  
+  function currentSlide(n) {
+    showSlides(slideIndex = n);
+  }
+  
+  function showSlides(n) {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("dot");
+    if (n > slides.length) {slideIndex = 1}    
+    if (n < 1) {slideIndex = slides.length}
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";  
+    }
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";  
+    dots[slideIndex-1].className += " active";
+  }
+  </script>
+
+<br> <br> <br> <br> <br>
+<div class="bottom">
+  <div class="main"> IT Cources</div>
+<footer class="footer-distributed">
+ 
+<div class="footer-left">
+ 
+<h3>IT Cources<span>Online</span></h3>
+ 
+<p class="footer-links">
+<a href="index.html">Home</a>
+·
+<a href="#">About</a>
+·
+<a href="news.html">News</a>
+·
+<a href="contact.html">Contact</a>
+</p>
+ 
+<p class="footer-company-name">Alnuaimi &copy; 2021</p>
+</div>
+ 
+<div class="footer-center">
+ 
+<div>
+<i class="fa fa-map-marker"></i>
+<p><span>Bahrain </span> Manama</p>
+</div>
+ 
+<div>
+<i class="fa fa-phone"></i>
+<p>+973 3886 7868</p>
+</div>
+ 
+<div>
+<i class="fa fa-envelope"></i>
+<p><a href="mailto:support@company.com">Alnuiami@gmail.com
+</a></p>
+</div>
+ 
+</div>
+ 
+<div class="footer-right">
+ 
+<p class="footer-company-about">
+<span>IT Cources </span>
+We are here to help you to improve your ability in diffrent programing language   &amp; kindly opne your eyies and follow us.
+</p>
+ 
+<div class="footer-icons">
+ 
+<a href="#"><i class="fa fa-facebook"></i></a>
+<a href="#"><i class="fa fa-twitter"></i></a>
+<a href="#"><i class="fa fa-linkedin"></i></a>
+<a href="#"><i class="fa fa-github"></i></a>
+ 
+</div>
+ 
+</div>
+</footer>
+</div>
+
+      </body>
+      
+  </html>
